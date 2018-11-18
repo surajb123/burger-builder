@@ -97,11 +97,11 @@ class BurgerBuilder extends Component {
             ingredients: this.state.ingredients,
             price: this.state.totalPrice,
             customer: {
-                name: 'Max Schwarzmüller',
+                name: 'Suraj',
                 address: {
-                    street: 'Teststreet 1',
-                    zipCode: '41351',
-                    country: 'Germany'
+                    street: 'Somewhere',
+                    zipCode: '123456',
+                    country: 'India'
                 },
                 email: 'test@test.com'
             },
@@ -142,7 +142,7 @@ class BurgerBuilder extends Component {
             orderSummary = <OrderSummary
                 ingredients={this.state.ingredients}
                 price={this.state.totalPrice}
-                purchaseCancelled={this.purchaseCancelHandler}
+                purchaseCanceled={this.purchaseCancelHandler}
                 purchaseContinued={this.purchaseContinueHandler} />;
         }
         if ( this.state.loading ) {
